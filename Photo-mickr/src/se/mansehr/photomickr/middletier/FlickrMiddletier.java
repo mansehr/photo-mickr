@@ -1,21 +1,5 @@
 package se.mansehr.photomickr.middletier;
 
-import java.io.IOException;
-import java.io.InputStream;
-//import java.util.Collection;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Properties;
-import java.util.Queue;
-
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.xml.sax.SAXException;
-
-import se.mansehr.photomickr.model.Tag;
-
 import com.aetrion.flickr.Flickr;
 import com.aetrion.flickr.FlickrException;
 import com.aetrion.flickr.REST;
@@ -26,8 +10,18 @@ import com.aetrion.flickr.photos.Photo;
 import com.aetrion.flickr.photos.PhotoList;
 import com.aetrion.flickr.photos.PhotosInterface;
 import com.aetrion.flickr.photos.SearchParameters;
-//import com.aetrion.flickr.tags.TagsInterface;
 import com.aetrion.flickr.util.IOUtilities;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Properties;
+import java.util.Queue;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
+import se.mansehr.photomickr.model.Tag;
 
 public class FlickrMiddletier extends TagSource {
 	Flickr f;

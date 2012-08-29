@@ -14,6 +14,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import se.mansehr.photomickr.Persistator;
+import se.mansehr.photomickr.middletier.FlickrMiddletier;
+import se.mansehr.photomickr.middletier.TagSource;
 
 public class FlickrMiddletierTest {
 	static TagSource ts = new FlickrMiddletier();
